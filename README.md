@@ -1,1 +1,0 @@
-# Encriptar-i-desencriptar
