@@ -9,7 +9,18 @@ from bgn.keygen import modified_weil_pairing
 q = 2     
 r = 3
 n = q*r 
-p=23
+
+def generar_p(n):
+    n=q*r
+    l=1
+    while True:
+        p = 4*l*n - 1
+        if gmpy2.is_prime(p):
+            if p%3==2:
+                return p
+        l += 1  
+
+p = generar_p(n)
 
 #Definim el camp on es troben tots els punts i la corba el·líptica en aquest camp.
 field = FiniteFieldPrimeOrder(prime=p)
