@@ -1,5 +1,5 @@
 import random
-from BGN_Crypto2 import construir_bgn
+from BGN_Crypto import construir_bgn
 
 #Funció per fer operacions amb els missatges de dues llistes encriptats
 def difs_emmascarades_agrupat(bgn, Cx_list, y_list):
